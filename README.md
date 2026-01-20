@@ -27,8 +27,8 @@ If you find these configs useful, consider supporting my RAM upgrade fund: https
 
 Project Navigation
 Explore the different parts of this ecosystem:
-* [🛠️ Docker Stack](docker-compose.yml) - The core services.
-* [⚙️ Configurations](configs/) - Detailed app settings (Pi-hole, Nginx).
-* [🚀 Optimization Guide](optimization/) - How I run 15+ services on 8GB RAM.
-* [📱 Mobile Workflow](guides/) - Managing everything via phone/tablet.
-* [🖥️ Hardware Specs](hardware/) - Details of the HP Compaq 8300 setup.
+* 📁 **[hardware/](hardware/)** - Full server specifications (i5-3470, 8GB RAM, 256GB SSD).
+* 📁 **[ready-to-use-stacks/](ready-to-use-stacks/)** - Production-ready Docker Compose files for all services.
+* 📁 **[optimization/](optimization/)** - Guides on RAM management and system tuning for budget hardware.
+* 📁 **[guides/](guides/)** - Step-by-step tutorials for remote access and mobile management.
+* 📁 **[configs/](configs/)** - Specific configuration files for Nginx and other services.
