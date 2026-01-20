@@ -1,0 +1,44 @@
+version: "3.6"
+
+# Nextcloud + MariaDB Stack
+# This is a full cloud solution. Database is configured to work 
+# with internal Docker networks for maximum security.
+
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      - MYSQL_PASSWORD=set_secure_password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud_user
+      - MYSQL_HOST=mariadb
+    volumes:
+      - ./nextcloud_data:/var/www/html
+    networks:
+      - nextcloud_network
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=set_root_password
+      - MYSQL_PASSWORD=set_secure_password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud_user
+    volumes:
+      - ./mariadb_data:/var/lib/mysql
+    networks:
+      - nextcloud_network
+      - internal_bridge # Connected to your main network for other apps
+
+networks:
+  nextcloud_network:
+    driver: bridge
+  internal_bridge:
+    external:
+      name: mojasieć
