@@ -1,0 +1,17 @@
+version: '3.9'
+
+# Kavita: The fastest and most feature-rich reading server.
+# Perfect for Comics, Manga, and Ebooks.
+
+services:
+  kavita:
+    image: jvmilazz0/kavita:latest
+    container_name: kavita
+    volumes:
+      - ./books:/data           # Place your books/comics here
+      - ./config:/kavita/config # Configuration data
+    environment:
+      - TZ=Europe/Warsaw
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
