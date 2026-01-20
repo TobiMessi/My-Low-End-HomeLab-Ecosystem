@@ -1,0 +1,19 @@
+version: "3.6"
+
+# Honeygain: Earn passive income by sharing your internet bandwidth.
+# This container is very lightweight and runs in the background.
+
+services:
+  honeygain:
+    image: honeygain/honeygain:latest
+    container_name: honeygain
+    restart: unless-stopped
+    command: 
+      - "-tou-accept"
+      - "-email"
+      - "YOUR_EMAIL_HERE"    # Put your Honeygain email here
+      - "-pass"
+      - "YOUR_PASSWORD_HERE" # Put your Honeygain password here
+      - "-device"
+      - "HomeLab_Server"     # Name of the device in your dashboard
+    network_mode: "bridge"
