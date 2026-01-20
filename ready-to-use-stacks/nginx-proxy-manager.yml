@@ -1,0 +1,17 @@
+version: '3.8'
+
+# Nginx Proxy Manager: The easy way to manage reverse proxies.
+# Use this to give your services pretty URLs and SSL certificates.
+
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      - '80:80'      # HTTP traffic
+      - '81:81'      # Admin Panel (IP:81)
+      - '443:443'    # HTTPS traffic
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
