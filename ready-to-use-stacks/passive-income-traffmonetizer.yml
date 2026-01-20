@@ -1,0 +1,19 @@
+version: "3.6"
+
+# Traffmonetizer: Earn by sharing your internet connection.
+# Perfect combo with Honeygain for budget HomeLabs.
+
+services:
+  tm:
+    image: traffmonetizer/cli_v2:latest
+    container_name: tm
+    restart: unless-stopped
+    command:
+      - "start"
+      - "accept"
+      - "--token"
+      - "YOUR_TOKEN_HERE" # Put your individual token from traffmonetizer.com
+    environment:
+      - APP_UID=1654
+      - DOTNET_CLI_TELEMETRY_OPTOUT=1
+    network_mode: "bridge"
