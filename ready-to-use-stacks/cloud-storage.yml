@@ -1,0 +1,42 @@
+version: "3.6"
+
+# Nextcloud: Your private cloud for files, contacts, and photos.
+# Includes MariaDB as the database backend.
+
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      - MYSQL_PASSWORD=set_your_password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud_user
+      - MYSQL_HOST=mariadb
+      - PHP_MEMORY_LIMIT=512M
+      - PHP_UPLOAD_LIMIT=512M
+    volumes:
+      - ./nextcloud_data:/var/www/html
+    networks:
+      - cloud_network
+
+  mariadb:
+    image: mariadb:10.6
+    container_name: mariadb
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    environment:
+      - MYSQL_ROOT_PASSWORD=set_root_password
+      - MYSQL_PASSWORD=set_your_password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud_user
+    volumes:
+      - ./mariadb_data:/var/lib/mysql
+    networks:
+      - cloud_network
+
+networks:
+  cloud_network:
+    driver: bridge
