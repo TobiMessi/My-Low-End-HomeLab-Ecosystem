@@ -1,0 +1,17 @@
+version: "3.6"
+
+# Uptime Kuma: A self-hosted monitoring tool like "Uptime Robot".
+# Features: HTTP(s) monitoring, TCP/Ping, and beautiful status pages.
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptime-kuma
+    restart: always
+    ports:
+      - "3001:3001"
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./uptime_kuma_data:/app/data
