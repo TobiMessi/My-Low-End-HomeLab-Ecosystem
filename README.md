@@ -30,6 +30,23 @@ Documentation and configurations for my high-efficiency HomeLab running on a ret
 
 ---
 
+## Resource Usage Overview
+
+Average resource consumption measured via `docker stats` under standard operating conditions.
+
+| Service              | CPU Usage (Avg) | RAM Usage (Avg) | Priority |
+|:---------------------|:----------------|:----------------|:---------|
+| AdGuard Home         | 0.1% - 0.5%     | 120 MB          | High     |
+| Portainer Agent      | 0.1%            | 30 MB           | Medium   |
+| Gatus                | 0.2%            | 45 MB           | Medium   |
+| Tailscale            | 0.1%            | 25 MB           | High     |
+| Passive Income Apps  | 1.0% - 3.0%     | 250 MB          | Low      |
+| **Total Ecosystem** | **~5.0%** | **~1.2 GB** | --       |
+
+*Note: System load remains stable during concurrent DNS queries. Background tasks are optimized to prevent resource spikes.*
+
+---
+
 Support my work 
 
 If you find these configs useful, consider supporting my RAM upgrade fund: https://buymeacoffee.com/TobiK0
