@@ -45,6 +45,19 @@ Average resource consumption measured via `docker stats` under standard operatin
 
 *Note: System load remains stable during concurrent DNS queries. Background tasks are optimized to prevent resource spikes.*
 
+## Project Economics
+
+| Category | Details |
+|:---|:---|
+| **Hardware Cost** | **0 PLN** (Salvaged office hardware) |
+| **Power Consumption** | ~15W - 25W (Idle/Light Load) |
+| **Estimated Monthly Cost** | ~12 - 18 PLN (Electricity) |
+| **Profitability** | Passive income apps aim to offset 100% of power costs |
+
+> [!NOTE]
+> The hardware was acquired for free during a corporate office upgrade. This makes the project a 100% recycled "zero-cost" build where every earned penny covers the operational expenses.
+
+
 ---
 
 Support my work 
