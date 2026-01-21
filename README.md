@@ -6,7 +6,11 @@
 My Low-End HomeLab Ecosystem 
 Documentation and configurations for my high-efficiency HomeLab running on a retired HP Compaq 8300 SFF.
 
-![IMG_20260121_194436](https://github.com/user-attachments/assets/3b8da885-6173-491a-a40c-a23be35128fb)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b8da885-6173-491a-a40c-a23be35128fb" width="500" title="My HP Compaq 8300 SFF Setup">
+  <br>
+  <em>Mój budżetowy serwer: HP Compaq 8300 SFF (i5-3470, 8GB RAM)</em>
+</p>
 
  Hardware Spec
 • CPU: Intel Core i5-3470 @ 3.20GHz
