@@ -60,10 +60,11 @@ Average resource consumption measured via `docker stats` under standard operatin
 
 ---
 
-### 🗺️ Project Roadmap
+###  Project Roadmap
 - [x] Initial hardware setup (HP Compaq 8300 SFF)
 - [x] Basic Docker stack (Passive Income services)
 - [ ] **Network & Monitoring:** Replace Pi-hole with **AdGuard Home** and Uptime Kuma with **Gatus** (Optimization focus)
+- [ ] **Advanced Optimization:** Migrate core services to **Distroless** or **Alpine** images to further reduce RAM footprint
 - [ ] **Media Ecosystem:** Implement **Plex Media Server** for high-performance streaming
 - [ ] **The "Arr" Stack:** Full automation for media management (Sonarr, Radarr, Prowlarr)
 - [ ] **Unified Dashboard:** Centralized management via **Homepage**
