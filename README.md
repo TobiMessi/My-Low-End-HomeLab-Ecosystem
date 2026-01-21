@@ -40,6 +40,18 @@ Or login by my links
 
 ---
 
+
+### 🗺️ Project Roadmap
+- [x] Initial hardware setup (HP Compaq 8300 SFF)
+- [x] Basic Docker stack (Passive Income services)
+- [ ] **Network & Monitoring:** Replace Pi-hole with **AdGuard Home** and Uptime Kuma with **Gatus** (Optimization focus)
+- [ ] **Media Ecosystem:** Implement **Plex Media Server** for high-performance streaming
+- [ ] **The "Arr" Stack:** Full automation for media management (Sonarr, Radarr, Prowlarr)
+- [ ] **Unified Dashboard:** Centralized management via **Homepage**
+
+
+---
+
 Project Navigation
 Explore the different parts of this ecosystem:
 * 📁 **[hardware/](hardware/)** - Full server specifications (i5-3470, 8GB RAM, 256GB SSD).
