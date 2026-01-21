@@ -1,6 +1,7 @@
 ![Stars](https://img.shields.io/github/stars/TobiMessi/My-Low-End-HomeLab-Ecosystem?style=for-the-badge&color=ffd700)
 ![License](https://img.shields.io/github/license/TobiMessi/My-Low-End-HomeLab-Ecosystem?style=for-the-badge&color=007bff)
 ![Repo Size](https://img.shields.io/github/repo-size/TobiMessi/My-Low-End-HomeLab-Ecosystem?style=for-the-badge&color=28a745)
+![my-small-homelab-v0-oj211fq6djeg1](https://github.com/user-attachments/assets/7c5f6e8b-cdfe-43e0-a5b9-ff4f000c0127)
 
 My Low-End HomeLab Ecosystem 
 Documentation and configurations for my high-efficiency HomeLab running on a retired HP Compaq 8300 SFF.
