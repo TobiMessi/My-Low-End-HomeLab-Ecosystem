@@ -82,13 +82,12 @@ Or login by my links
 
 ---
 
-### Project Navigation
+###  Project Navigation
 
 Explore the core components of this ecosystem:
 
+* **[ready-to-deploy-stacks/](./ready-to-deploy-stacks/)** - Production-ready Docker Compose configurations for AdGuard, monitoring, and passive income apps.
 * **[guides/](./guides/)** - Essential step-by-step tutorials for remote access, one-script installation, and mobile-first management.
-* **[ready-to-use-stacks/](./ready-to-use-stacks/)** - Production-ready Docker Compose configurations for AdGuard, monitoring, and passive income apps.
-* **[scripts/](./scripts/)** - Automation tools for system updates, maintenance, and automated backups.
 * **[optimization/](./optimization/)** - Technical guides on RAM tuning and CPU optimization for low-end hardware.
 * **[hardware/](./hardware/)** - Detailed specifications and power efficiency data of the server node.
 * **[configs/](./configs/)** - Raw configuration files for proxy services and network protection.
