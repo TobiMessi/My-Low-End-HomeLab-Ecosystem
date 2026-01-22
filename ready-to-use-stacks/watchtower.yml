@@ -1,0 +1,16 @@
+services:
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true      # Usuwa stare obrazy po aktualizacji (oszczędza miejsce na dysku!)
+      - WATCHTOWER_POLL_INTERVAL=86400 # Sprawdza aktualizacje raz na 24h
+      - WATCHTOWER_INCLUDE_STOPPED=false
+      - TZ=Europe/Warsaw             # Twoja strefa czasowa
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"              # Ogranicza rozmiar logów, żeby nie zapchać dysku
