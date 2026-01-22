@@ -62,6 +62,9 @@ Average resource consumption measured via `docker stats` under standard operatin
 > **Disclaimer regarding "Passive Income" services (Honeygain, Trafficmonetizer, etc.):**
 > Using these applications involves sharing your residential IP address as a proxy server. This may lead to IP reputation degradation or network security risks. The author of this project is not responsible for any damages, account bans, or security incidents resulting from the use of these tools. Use them strictly at your own risk.
 
+> [!NOTE]
+> **Deployment Note:**
+> Some files in the `Ready-to-deploy-stack` folder may represent individual containers, while others are full Docker Stacks. Depending on the file, you can deploy them as standalone containers via Docker CLI or as complete Stacks using Portainer.
 
 ---
 
@@ -76,7 +79,6 @@ Average resource consumption measured via `docker stats` under standard operatin
 - [ ] **Unified Dashboard:** Centralized management via **Homepage**
 - [ ]  Replace heavy images with Alpine/Distroless versions (Goal: -500MB RAM)
 - [ ] Benchmark system stability with the new Swap settings
-
 
 ---
 
