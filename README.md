@@ -3,7 +3,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/TobiMessi/My-Low-End-HomeLab-Ecosystem?style=for-the-badge&color=28a745)
 
 
-My Low-End HomeLab Ecosystem 
+My Low-End HomeLab Ecosystem  
 Documentation and configurations for my high-efficiency HomeLab running on a retired HP Compaq 8300 SFF.
 
 <p align="center">
